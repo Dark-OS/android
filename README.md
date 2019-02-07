@@ -1,23 +1,6 @@
-## Submitting Patches ##
-------------------
-Our ROM is open source, and patches are always welcome!
-You can send patches by using these commands:
-
-    cd <project>
-    <make edits>
-    git add -A
-    git commit -m "commit message"
-    git push ssh://<username>@gerrit.omnirom.org:29418/<project> HEAD:refs/for/android-9.0
-
-Register at <gerrit.omnirom.org> and use the username that you registered there in the above command
-
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
-
-If you are going to make extra additions, just repeat steps (Don't start a new patch), but instead of git commit -m
-use git commit --amend. Gerrit will recognize it as a new patchset.
-
-To view the status of your and others patches, visit [OmniROM Code Review](https://gerrit.omnirom.org)
-
+## About Dark-OS ##
+-------------
+TODO
 
 ## Maintaining Authorship ##
 ----------------------
@@ -26,7 +9,7 @@ from anywhere else (another ROM, project, etc.), it is imperative that you maint
 work you are seeking to include. Doing so will ensure that credit is given where it is deserved, and the [prinicples of open source](http://opensource.org/docs/osd)
 are upheld. Your contribution to the project will still be recognized as you will forever be listed as the committer.
 
-If you manually cherry pick a patch/fix then you will need to add the original author prior to pushing to our [gerrit](https://gerrit.omnirom.org).
+If you manually cherry pick a patch/fix then you will need to add the original author prior to pushing.
 This is a very easy task to perform, and is usually done after you commit a patch/fix locally. This is accomplished
 after you type in `git commit -a` , type in the commit message and save. You would then do the following:
 
@@ -53,16 +36,16 @@ let me fix it because I was found out!" message.
 ## Getting Started ##
 ---------------
 
-To get started with OmniROM, you'll need to get
+To get started with Dark-OS, you'll need to get
 familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
-To initialize your local repository using the OmniROM trees, use a command like this:
+To initialize your local repository using the Dark-OS trees, use a command like this:
 
-    repo init -u git://github.com/omnirom/android.git -b android-9.0
+    repo init -u git://github.com/dark-os/android.git -b android-9.0
 
 Then to sync up:
 
-    repo sync
+    repo sync -j8 -c -f --no-tag --no-clone-bundle --force-sync
 
 Then to build:
 
