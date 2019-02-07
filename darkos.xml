@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="darkos" fetch="https://github.com/dark-os/"  />
+
+  <remove-project name="android_vendor_omni" />
+  <project path="vendor/omni" name="android_vendor_omni" remote="darkos" revision="android-9.0" />
+</manifest>

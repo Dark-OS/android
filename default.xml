@@ -714,5 +714,6 @@
   <!-- OmniROM -->
   <include name="omni-default.xml" />
   <!-- Dark-OS -->
+  <include name="darkos.xml" />
   <include name="opengapps.xml" />
 </manifest>
