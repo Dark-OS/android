@@ -5,6 +5,12 @@
   <remove-project name="android_vendor_omni" />
   <project path="vendor/omni" name="android_vendor_omni" remote="darkos" revision="android-9.0" />
 
+  <remove-project name="android_system_core" />
+  <project path="system/core" name="android_system_core" remote="darkos" revision="android-9.0" />
+
+  <remove-project name="android_frameworks_base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="darkos" revision="android-9.0" />
+
   <remove-project name="android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="darkos" revision="android-9.0" />
 
